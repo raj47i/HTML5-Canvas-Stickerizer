@@ -1,0 +1,16 @@
+{
+  "name": "stickerizer",
+  "description": "Demonstrate HTML5 Canvas; with an app that allows Images(stickers) to be applied to another image.",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bower": "^1.6.5",
+    "grunt": "^0.4.5",
+    "grunt-serve": "^0.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ss"
+  },
+  "author": "Raj <web@arunraj.in>"
+}

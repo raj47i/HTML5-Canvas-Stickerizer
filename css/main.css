@@ -1,0 +1,72 @@
+ /* write your style definitions here or create css files and include them here */
+body, input, p, label {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 13px;
+}
+div.main{
+    position: relative;
+    display: block;
+}
+div.image{
+    margin 5px;
+    display: block;
+    z-index: 1;
+    vertical-align: middle;
+    border: 1px solid #000;
+}
+
+div.image canvas{
+    z-index: 10;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: scroll;
+    background-color: #ccc;
+}
+div.image input{
+    z-index: 20;
+    margin: auto;
+    position: absolute;
+    left: 38%;
+    top: 45%;
+}
+
+div.toolbar{
+    margin: 0 0 3px;
+}
+
+div.stickers{
+    float: right;
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 180px;
+    padding: 2px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+div.stickers img{
+    
+}
+
+div.tools .sticker{
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin: 2px;
+}
+div.ui-dialog form{
+    padding: 10px 0 0;
+}
+div.ui-dialog input[type=text],
+div.ui-dialog input[type=file]{
+    width: 98%;
+    line-height: 1.25em;
+    padding: 3px;
+    margin: 2px 0 5px;
+}
+div.ui-dialog p{
+    margin: 7px 0 0;
+}

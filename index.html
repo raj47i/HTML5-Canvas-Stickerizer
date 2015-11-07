@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bower_components/jquery-ui/themes/ui-darkness/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="dialogs">
+            <div class="sticker-new" title="Create new sticker">
+              <form>
+                <fieldset>
+                    <div>
+                      <label for="s_title">Title:</label>
+                        <div><input type="text" name="s_title" id="s_title" value="" placeholder="Enter a title with atleast 3 chars." class="text ui-widget-content ui-corner-all"></div>
+                    </div>
+                    <div>
+                      <label for="s_file">Image:</label>
+                      <div><input type="file" name="s_file" id="s_file" value="" class="file ui-widget-content ui-corner-all"></div>
+                    </div>
+                  <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                  <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+              </form>
+              <p> &#9679; All fields are required.</p>
+            </div>
+
+            <div class="image-save" title="Preview &amp; Save">
+              <p class="validateTips">Right click and save the image from below.</p>
+              <img style="max-height: 600px; max-width: 800px; overflow: scroll;">
+            </div>
+        </div>
+        
+        
+        <div class="toolbar">
+            <button class="image-load">Open Image</button>
+            <button class="image-reset">Reset</button>
+            <button class="image-save">Preview &amp; Save</button>
+            
+            <button class="sticker-new">New Sticker</button>
+            <button class="sticker-reset">Reset Stickers</button>
+        </div>
+
+        <div class="main">
+            <div class="stickers"></div>
+            <div class="image">
+                <canvas></canvas>
+                <input type="file" >
+            </div>
+        </div>
+        
+        
+        
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+        <script src="js/ui-dialogs.js"></script>
+        <script src="js/ui-toolbar.js"></script>
+        <script src="js/ui-work-area.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
